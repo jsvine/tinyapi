@@ -1,6 +1,6 @@
 # tinyapi
 
-`tinyapi` is a Python wrapper around [TinyLetter](https://tinyletter.com/)'s publicly accessible — but undocumented — API. Built and maintained by the author of [Data Is Plural](https://tinyletter.com/data-is-plural), a weekly newsletter of interesting/curious datasets.
+`tinyapi` is a Python wrapper around [TinyLetter](https://tinyletter.com/)'s publicly accessible — but undocumented — API. Brought to you by [Data Is Plural](https://tinyletter.com/data-is-plural), a weekly newsletter of interesting/curious datasets.
 
 __See also__: [`tinystats`](https://github.com/jsvine/tinystats), a command-line tool for fetching data from the TinyLetter API. No programming knowledge required.
 
