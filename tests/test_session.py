@@ -1,10 +1,12 @@
-from unittest import TestCase
 import tinyapi
+from unittest import TestCase
 from getpass import getpass
 from nose.tools import raises
+import os
 
-USERNAME = "tinyapi-test-account"
-PASSWORD = getpass()
+DEFAULT_USERNAME = "tinyapi-test-account"
+USERNAME = os.environ.get("TINYAPI_TEST_USERNAME") or DEFAULT_USERNAME
+PASSWORD = os.environ.get("TINYAPI_TEST_PASSWORD") or getpass()
 
 class TestMainInterface(TestCase):
     def test_login(self):

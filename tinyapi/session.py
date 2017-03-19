@@ -1,6 +1,7 @@
 import requests
 import re
 import json
+from .draft import Draft
 
 URL = "https://app.tinyletter.com/__svcbus__/"
 
@@ -49,7 +50,8 @@ class Session(object):
         if res["success"] == True:
             return res["result"]
         else:
-            raise Exception("Request not successful.")
+            err_msg = res["errmsg"]
+            raise Exception("Request not successful: '{0}'".format(err_msg))
     
     def _login(self, password):
         req_data = [self.username, password, None, None, None, None ]
@@ -115,3 +117,9 @@ class Session(object):
     def get_subscriber(self, subscriber_id):
         req_data = [ str(subscriber_id) ]
         return self.request("find:Contact.stats", req_data)
+
+    def create_draft(self):
+        return Draft(self)
+
+    def get_draft(self, message_id):
+        return Draft(self, message_id).fetch()
