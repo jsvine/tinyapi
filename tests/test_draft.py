@@ -19,7 +19,7 @@ class TestDraft(TestCase):
         draft.body = "this is the body"
         draft.public_message = True
         message_id = draft.save().message_id
-        fetched_draft = self.session.get_draft(message_id)
+        fetched_draft = self.session.edit_draft(message_id)
         assert(fetched_draft.message_id == draft.message_id)
         assert(fetched_draft.subject == draft.subject)
         assert(fetched_draft.body == draft.body)
@@ -28,7 +28,7 @@ class TestDraft(TestCase):
 
     @raises(Exception)
     def test_bad_id(self):
-        draft = self.session.get_draft(1)
+        draft = self.session.edit_draft(1)
         draft.fetch()
 
     @raises(Exception)

@@ -23,15 +23,8 @@ class TestSession(TestCase):
     def test_count_messages(self):
         assert(self.session.count_messages() > 0)
 
-    def test_count_sent_messages(self):
-        assert(self.session.count_sent_messages() > 0)
-
     def test_get_messages(self):
         msgs = self.session.get_messages()
-        assert(len(msgs) > 0)
-
-    def test_get_sent_messages(self):
-        msgs = self.session.get_sent_messages()
         assert(len(msgs) > 0)
 
     def test_get_message(self):
