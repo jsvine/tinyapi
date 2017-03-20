@@ -1,13 +1,25 @@
-import sys
+import sys, os
 from setuptools import setup, find_packages
+import subprocess
+
+NAME = "tinyapi"
+HERE = os.path.abspath(os.path.dirname(__file__))
+version_ns = {}
+with open(os.path.join(HERE, NAME, '_version.py')) as f:
+    exec(f.read(), {}, version_ns)
 
 setup(
-    name="tinyapi",
-    version="0.0.0",
+    name=NAME,
+    version=version_ns['__version__'],
     description="Python wrapper for TinyLetter's (publicly accessible, but undocumented) API.",
     long_description="",
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.1",
+        "Programming Language :: Python :: 3.4",
+        "Programming Language :: Python :: 3.5",
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
     ],
