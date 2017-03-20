@@ -14,7 +14,8 @@ TinyAPI is a Python wrapper around `TinyLetter's <https://tinyletter.com/>`_ pub
 
 Brought to you by `Data Is Plural <https://tinyletter.com/data-is-plural>`_, a weekly newsletter of interesting/curious datasets.
 
-Key links:
+Key links
+---------
 
 * Documentation: https://tinyapi.readthedocs.io/
 * Repository: https://github.com/jsvine/tinyapi
