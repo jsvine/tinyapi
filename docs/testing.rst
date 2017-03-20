@@ -25,4 +25,4 @@ Run the tests
 
 .. code-block:: sh
 
-    nosetests --with-coverage --cover-erase -cover-package tinyapi
+    nosetests --with-coverage --cover-erase --cover-package tinyapi
