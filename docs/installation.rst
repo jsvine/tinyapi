@@ -11,5 +11,5 @@ To use TinyAPI, install it with pip:
 
 .. note::
 
-    TinyAPI has been tested on Python 2.7, 3.1, 3.4, and 3.5.
+    TinyAPI has been tested on Python 2.7, 3.4, and 3.5.
 
