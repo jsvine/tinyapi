@@ -1,3 +1,11 @@
+.. image:: https://travis-ci.org/jsvine/tinyapi.png
+    :target: https://travis-ci.org/jsvine/tinyapi
+    :alt: Build status
+
+.. image:: https://img.shields.io/coveralls/jsvine/tinyapi.svg
+    :target: https://coveralls.io/github/jsvine/tinyapi
+    :alt: Code coverage
+
 .. image:: https://img.shields.io/pypi/v/tinyapi.svg
     :target: https://pypi.python.org/pypi/tinyapi
     :alt: Version
